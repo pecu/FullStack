@@ -1,3 +1,4 @@
+django_heroku==0.3.1
 Django==1.8.6
 appnope==0.1.0
 decorator==4.0.4
