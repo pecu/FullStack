@@ -15,4 +15,4 @@ ptyprocess==0.5
 simplegeneric==0.8.1
 static3==0.6.1
 traitlets==4.0.0
-psycopg2==2.7.5
+psycopg2-binary==2.7.5

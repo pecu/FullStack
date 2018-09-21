@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+{% load  staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Week2Example留言板</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Hi大家，這是第二週的陽春範例。</h1>
+    <h2>第二週需要學的是html跟css基礎<br>
+        網路上有很多教學，也有很多模板～<br>
+        大家加油！<br>
+    </h2>
+    <p id="ta">by助教<br></p>
+    <div id="container">
+        <div id="content">
+            <div class="msg">
+                <span class="name">Pecu</span>
+                Hello,Class!
+
+            </div>
+            <div class="msg">
+                <span class="name">Michael</span>
+                Hello,Pecu.
+            </div>
+        </div>
+        <div id="send-box">
+            <form id="send-form">
+                <input type="text" name="name" id="name" placeholder="暱稱">
+                <input type="text" name="msg" id="msg" placeholder="說點什麼？">
+                <input type="submit" id="submit" value="送出">
+            </form>
+            <span id='ps'>Ps:格子是假的，無法輸入ＸＤ</span>
+        </div>
+    </div>
+</body>
+
+</html>
