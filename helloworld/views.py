@@ -4,6 +4,12 @@ from django.contrib import auth
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 
+from django.template import loader
 
 def index(request):
-	return render(request, 'guestbookver1.html')
+	template = loader.get_template('guestbookver1.html')
+	names = ['pecu', 'michael', 'domi']
+	context = { 'names': names,
+				'fulltext': 'how are you'}
+	return HttpResponse(template.render(context, request))
+	#return render(request, 'guestbookver1.html')

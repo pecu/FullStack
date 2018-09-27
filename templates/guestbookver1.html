@@ -8,23 +8,17 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Hi大家，這是第二週的陽春範例。</h1>
-    <h2>第二週需要學的是html跟css基礎<br>
-        網路上有很多教學，也有很多模板～<br>
-        大家加油！<br>
-    </h2>
-    <p id="ta">by助教<br></p>
+    <h1>Hi大家，這是第二週的陽春範例 changing for view and template。</h1>
+    
+    <p id="ta">by pecu<br></p> 
     <div id="container">
         <div id="content">
+            {% for name in names %}
             <div class="msg">
-                <span class="name">Pecu</span>
-                Hello,Class!
-
+                <span class="name">{{ name }}</span>
+                {{ fulltext }}
             </div>
-            <div class="msg">
-                <span class="name">Michael</span>
-                Hello,Pecu.
-            </div>
+            {% endfor %}
         </div>
         <div id="send-box">
             <form id="send-form">
